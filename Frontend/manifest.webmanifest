@@ -1,0 +1,46 @@
+{
+  "id": "/",
+  "name": "Gamified Todo",
+  "short_name": "Gamified Todo",
+  "description": "OLDAL LEÍRÁSA.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f0f14",
+  "theme_color": "#0f0f14",
+  "categories": ["productivity", "lifestyle"],
+  "icons": [
+    { "src": "/pwa-64x64.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "/pwa-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/pwa-512x512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Task list with rewards on desktop"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Task list with rewards on mobile"
+    }
+  ],
+  "shortcuts": [
+    { "name": "New task", "url": "/tasks/new" },
+    { "name": "Shop", "url": "/shop" }
+  ],
+  "launch_handler": { "client_mode": "navigate-existing" }
+}
