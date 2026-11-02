@@ -7,6 +7,16 @@
 
     <title>Gamified Todo</title>
 
+    <!--Téma villanásmentesen jelenjen meg: Localstorage-be is elmentjük a témát, de csak azért hogy ne a default villanjon be a felhasználónak. -->
+    <meta name="theme-color" content="ALAP TÉMA FŐSZÍNE" />
+    <script>
+      // Ez a preconnect előtt kell h fusson
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme) document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+
     <!-- Addig kell amíg külön linken fut a front és backend, utána törölhető sor. Sanctum süti:use-credentials | bearer token: sima crossorigin -->>
     <link rel="preconnect" href="backend_link" crossorigin="use-credentials" />
     <!--Ez a sor törölendő ha a vite pwa pluginját használnánk (tartalma a vite configba megy át):-->
@@ -70,7 +80,7 @@
     </script>
   </head>
   <body>
-    <noscript>♥ This webapplication needs JavaScript ro run. Please enable it in your browser to play and track your progress ♥</noscript>
+    <noscript>♥ This webapplication needs JavaScript to run. Please enable it in your browser to play and track your progress ♥</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

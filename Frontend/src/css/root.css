@@ -1,13 +1,13 @@
 :root {
-    --color-theme-bg: white;
-    --color-theme-text: black;
+    --color-theme-bg: #dc9596;
+    --color-theme-text: #252323;
     --color-theme-border: var(--color-theme-text);
-    --color-theme-accent: brown;
-    --color-theme-highlight: pink;
+    --color-theme-accent: #6d3b47;
+    --color-theme-highlight: rgb(231, 196, 202);
 
-    --color-success: green;
-    --color-warning: yellow;
-    --color-danger: red;
+    --color-success: #93d893;
+    --color-warning: #d7d893;
+    --color-danger: #dac893;
 
     --size-font-headings: 30px;
     --size-font-base: 16px;
