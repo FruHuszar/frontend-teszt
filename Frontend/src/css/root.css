@@ -1,0 +1,19 @@
+:root {
+    --color-theme-bg: white;
+    --color-theme-text: black;
+    --color-theme-border: var(--color-theme-text);
+    --color-theme-accent: brown;
+    --color-theme-highlight: pink;
+
+    --color-success: green;
+    --color-warning: yellow;
+    --color-danger: red;
+
+    --size-font-headings: 30px;
+    --size-font-base: 16px;
+    --size-font-small: 10px;
+
+    --fontcase: Verdana, Geneva, Tahoma, sans-serif;
+    
+    --gradient: linear-gradient(90deg,#833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+}
