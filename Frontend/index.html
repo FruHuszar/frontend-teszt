@@ -2,11 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit-cover" />
+    <meta name="description" content="OLDAL LEÍRÁSA SZÉP KERESHETŐ KULCSSZAVAKKAL (todo, rutin idk)">
+
+    <title>Gamified Todo</title>
+
+    <!-- Addig kell amíg külön linken fut a front és backend, utána törölhető sor. Sanctum süti:use-credentials | bearer token: sima crossorigin -->>
+    <link rel="preconnect" href="backend_link" crossorigin="use-credentials" />
+    <!--Ez a sor törölendő ha a vite pwa pluginját használnánk (tartalma a vite configba megy át):-->
+    <link rel="manifest" href="manifest.webmanifest">
+  
+    <!-- Ikonok + PWA -->>
+    <link rel="icon" sizes="48x48" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" sizes="any"  href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+    <meta name="apple-mobile-web-app-title" content="Gamified Todo" />
+
+    <!-- SEO -->
+    <link rel="canonical" href="WEBOLDAL LINKJE">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Gamified Todo" />
+    <meta property="og:title" content="Gamified Todo - Alcím/catch szöveg" />
+    <meta property="og:description" content="OLDAL LEÍRÁSA" />
+    <meta property="og:url" content="WEBOLDAL LINK" />
+    <meta property="og:image" content="BORITO KEP LINK" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="BORITO KEP LEIRASA" />
+    <meta property="twitter:card" content="KEP LINK" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "WEBOLDAL LINK",
+            "url": "WEBOLDAL LINK",
+            "name": "Gamified Todo",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "WEBOLDAL LINK/#app",
+            "name": "Gamified Todo",
+            "url": "WEBOLDAL LINK",
+            "description": "OLDAL LEÍRÁSA",
+            "image": "WEBOLDAL LINK/og-image.png",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "Any",
+            "browserRequirements": "Requires JavaScript",
+            "inLanguage": "en",
+            "isAccessibleForFree": true,
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "HUF" },
+            "featureList": [
+              "Gamified to-do list",
+              "Rewards and in-app shop",
+              "Unlockable visual themes",
+              "3D playground"
+            ],
+            "creator": { "@type": "Organization", "name": "Dream team" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
+    <noscript>♥ This webapplication needs JavaScript ro run. Please enable it in your browser to play and track your progress ♥</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
