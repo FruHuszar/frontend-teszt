@@ -6,7 +6,7 @@ import type { PremiumTheme } from "../engine/types";
 export const THEME: PremiumTheme = {
   "key": "persona",
   "label": "Persona",
-  "generator": "Persona Studio 2.5 · 2026-11-04T07:50:43",
+  "generator": "Persona Studio 2.5 · 2026-11-04T09:10:27",
   "publicPath": "premium/persona/",
   "base": {
     "model": "base.glb",
