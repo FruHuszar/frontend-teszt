@@ -17,12 +17,14 @@
       } catch {}
     </script>
 
-    <!-- Addig kell amíg külön linken fut a front és backend, utána törölhető sor. Sanctum süti:use-credentials | bearer token: sima crossorigin -->>
+    <!-- Addig kell amíg külön linken fut a front és backend, utána törölhető sor. Sanctum süti:use-credentials | bearer token: sima crossorigin -->
     <link rel="preconnect" href="backend_link" crossorigin="use-credentials" />
     <!--Ez a sor törölendő ha a vite pwa pluginját használnánk (tartalma a vite configba megy át):-->
     <link rel="manifest" href="manifest.webmanifest">
+    <!-- Kicseréljük majd az ikonokat később posibbly -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
   
-    <!-- Ikonok + PWA -->>
+    <!-- Ikonok + PWA -->
     <link rel="icon" sizes="48x48" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" sizes="any"  href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">

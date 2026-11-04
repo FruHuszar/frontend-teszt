@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-@import "root.css"
+@import "root.css";
 
 /* env(safe-area-inset-*) padding kell a viewport fit cover miatt )teljes képernyős pwa, notch alá is rajzol */
