@@ -96,9 +96,10 @@
     --color-warning: #d7d893;
     --color-danger: #dac893;
 
-    --size-font-headings: 30px;
-    --size-font-base: 16px;
-    --size-font-small: 10px;
+    --size-font-headings: 20px;
+    --size-font-subheadings: 17px;
+    --size-font-base: 15px;
+    --size-font-small: 12px;
 
     --fontcase: Verdana, Geneva, Tahoma, sans-serif;
     

@@ -10,26 +10,58 @@
     --color-warning: #d7d893;
     --color-danger: #dac893;
 
-    --size-font-headings: 30px;
-    --size-font-base: 16px;
-    --size-font-small: 10px;
+    --size-font-headings: 20px;
+    --size-font-subheadings: 17px;
+    --size-font-base: 15px;
+    --size-font-small: 12px;
 
     --fontcase: Verdana, Geneva, Tahoma, sans-serif;
-    
+
     --gradient: linear-gradient(90deg,#833ab4 0%, #fd1d1d 50%, #fcb045 100%);
 }
 
-body {
-    background-color: var(--color-theme-bg);
-    color: var(--color-theme-text);
-    font-family: var(--fontcase);
-    font-size: var(--size-font-base);
-}
+/* @layer base: így a Tailwind osztályok (pl. text-sm) felül tudják írni ezeket.
+   Réteg nélkül ezek nyernének minden Tailwind osztály ellen. */
+@layer base {
+    body {
+        background-color: var(--color-theme-bg);
+        color: var(--color-theme-text);
+        font-family: var(--fontcase);
+        font-size: var(--size-font-base);
+    }
 
-h1, h2, h3 {
-    font-size: var(--size-font-headings);
-}
+    h1, h2 {
+        font-size: var(--size-font-headings);
+        line-height: 1.25;
+    }
 
-::selection {
-    background-color: var(--color-theme-highlight);
+    h3 {
+        font-size: var(--size-font-subheadings);
+        line-height: 1.25;
+    }
+
+    ::selection {
+        background-color: var(--color-theme-highlight);
+    }
+
+    /* Görgetősáv: vékony, átlátszó sávval (nincs fehér csík), a csúszka a szövegszínből kevert */
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: color-mix(in oklab, var(--color-theme-text) 30%, transparent) transparent;
+    }
+
+    /* Safari / régebbi WebKit, ami a fenti két sort nem ismeri */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: color-mix(in oklab, var(--color-theme-text) 30%, transparent);
+        border-radius: 9999px;
+    }
 }
