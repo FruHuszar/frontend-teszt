@@ -1,14 +1,14 @@
 :root {
-    --color-theme-bg: #dc9596;
-    --color-theme-text: #252323;
+    --color-theme-bg: #ffd1dc;
+    --color-theme-text: #2d0818;
     --color-theme-border: var(--color-theme-text);
-    --color-theme-accent: #6d3b47;
-    --color-theme-highlight: rgb(231, 196, 202);
-    --color-theme-moduls: #f5e0e0;
+    --color-theme-accent: #ff007f;
+    --color-theme-highlight: #ff9bbb;
+    --color-theme-moduls: #fff0f5;
 
-    --color-success: #93d893;
-    --color-warning: #d7d893;
-    --color-danger: #dac893;
+    --color-success: #52d689;
+    --color-warning: #ffb834;
+    --color-danger: #ff3b6b;
 
     --size-font-headings: 20px;
     --size-font-subheadings: 17px;
@@ -16,8 +16,8 @@
     --size-font-small: 12px;
 
     --fontcase: Verdana, Geneva, Tahoma, sans-serif;
-
-    --gradient: linear-gradient(90deg,#833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    
+    --gradient: linear-gradient(90deg, #ff007f 0%, #ff5e97 50%, #ffd1dc 100%);
 }
 
 /* @layer base: így a Tailwind osztályok (pl. text-sm) felül tudják írni ezeket.

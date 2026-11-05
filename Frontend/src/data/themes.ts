@@ -11,6 +11,20 @@ export const THEMES: ThemeOption[] = [
     images: [],
   },
   {
+    key: 'cherry-blossom',
+    label: 'Cherry Blossom',
+    description: 'Soft pink spring palette.',
+    premium: false,
+    images: [],
+  },
+  {
+    key: 'sky-garden',
+    label: 'Sky Garden',
+    description: 'Blue.',
+    premium: false,
+    images: [],
+  },
+  {
     key: 'persona',
     label: 'Persona',
     description: '3D character and animated stage behind your dashboard.',
@@ -20,12 +34,5 @@ export const THEMES: ThemeOption[] = [
       '/premium/persona/stage/fg_landscape.png',
       '/premium/persona/stage/bg_portrait_poster.jpg',
     ],
-  },
-  {
-    key: 'cherry-blossom',
-    label: 'Cherry Blossom',
-    description: 'Soft pink spring palette.',
-    premium: false,
-    images: [],
-  },
+  }
 ]

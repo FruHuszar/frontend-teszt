@@ -1,0 +1,21 @@
+:root[data-theme="sky-garden"] {
+    --color-theme-bg: #14241d;
+    --color-theme-text: #e8f5ec;
+    --color-theme-border: var(--color-theme-text);
+    --color-theme-accent: #14a1e4;
+    --color-theme-highlight: #3da073;
+    --color-theme-moduls: #1c3329;
+
+    --color-success: #4ade80;
+    --color-warning: #facc15;
+    --color-danger: #f87171;
+
+    --size-font-headings: 20px;
+    --size-font-subheadings: 17px;
+    --size-font-base: 15px;
+    --size-font-small: 12px;
+
+    --fontcase: Verdana, Geneva, Tahoma, sans-serif;
+    
+    --gradient: linear-gradient(90deg, #11998e 0%, #38ef7d 50%, #9ffbbf 100%);
+}

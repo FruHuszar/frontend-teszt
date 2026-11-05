@@ -2,5 +2,6 @@
 
 @import "root.css";
 @import "themes/cherry-bloom.css";
+@import "themes/sky-garden.css";
 
 /* env(safe-area-inset-*) padding kell a viewport fit cover miatt )teljes képernyős pwa, notch alá is rajzol */
